@@ -16,4 +16,4 @@ yarn typedoc
 # here's one example checking that the name from package.json is used
 # in TypeDoc's output.
 
-test $(jq '.name' docs/docs.json) = '"typedoc-repros"'
+test $(jq '.name' docs/docs.json) = '"typedoc-reprosx"'
