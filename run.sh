@@ -4,7 +4,7 @@
 set -e
 
 # Print commands before running them, to make CI output easier to understand
-set -x
+set -v
 
 # Install package.json dependencies
 yarn
@@ -16,4 +16,4 @@ yarn typedoc
 # here's one example checking that the name from package.json is used
 # in TypeDoc's output.
 
-test $(jq '.name' docs/docs.json) = "typedoc-reprosx"
+test $(jq '.name' docs/docs.json) = '"typedoc-repros"'
