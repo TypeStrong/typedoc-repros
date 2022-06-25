@@ -1,6 +1,7 @@
 {
+  "name": "typedoc-repros",
   "dependencies": {
-    "ts-node": "latest",
+    "typedoc": "latest",
     "typescript": "latest"
   }
 }

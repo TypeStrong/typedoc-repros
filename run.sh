@@ -6,8 +6,8 @@ n lts
 # Install package.json dependencies
 yarn
 
-# Run ts-node
-yarn ts-node ./example.ts
+# Run TypeDoc
+yarn typedoc
 
 echo "Process exited with code: $?"
 echo
