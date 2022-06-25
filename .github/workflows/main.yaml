@@ -4,7 +4,7 @@ on:
         branches:
             - main
     pull_request:
-        types: [opened, edited]
+        types: [opened, synchronize]
 
 jobs:
     run:
