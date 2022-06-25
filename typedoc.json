@@ -1,8 +1,8 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "treatWarningsAsErrors": true,
     "entryPoints": ["src/index.ts"],
 
+    "treatWarningsAsErrors": true,
     "out": "docs",
     "json": "docs/docs.json"
 }
