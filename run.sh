@@ -3,14 +3,18 @@
 # Automatically exit with an error code if any command fails
 set -e
 
-# Print commands before running them, to make CI output easier to understand
-set -v
-
 # Install package.json dependencies
 yarn
 
 # Run TypeDoc
 yarn typedoc
+
+echo
+echo ========================================================
+echo
+
+# Print commands before running them, to make CI output easier to understand
+set -v
 
 # You can add additional commands here to make assertions on the output,
 # here's one example checking that the name from package.json is used
