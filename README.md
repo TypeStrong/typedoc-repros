@@ -10,4 +10,4 @@ Helpers for working within all packages in the monorepo:
 
 ## Architecture
 
-- `npx @clis/dependencies architecture --filter="@nestjs/example"`
+- `npx @clizs/dependencies architecture --filter="@nestjs/example"`
