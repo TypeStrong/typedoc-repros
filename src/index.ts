@@ -2,4 +2,4 @@
  * Documented module
  * @module
  */
- export function foo() {}
+export function foo() {}
