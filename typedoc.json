@@ -2,6 +2,13 @@
     "$schema": "https://typedoc.org/schema.json",
     "entryPoints": ["src/index.ts"],
 
+    "validation": {
+        "notDocumented": true
+    },
+    "requiredToBeDocumented": [
+        "Project"
+    ],
+
     "treatWarningsAsErrors": true,
     "out": "docs",
     "json": "docs/docs.json"
