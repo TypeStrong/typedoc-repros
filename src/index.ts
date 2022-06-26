@@ -1,4 +1,5 @@
 /**
- * Some code reproducing a bug.
+ * Documented module
+ * @module
  */
-export const bug = 123;
+ export function foo() {}

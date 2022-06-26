@@ -6,8 +6,14 @@ set -e
 # Install package.json dependencies
 yarn
 
+set +e
+
 # Run TypeDoc
 yarn typedoc
+
+test $? = 1
+
+set -e
 
 echo
 echo ========================================================

@@ -3,6 +3,12 @@
     "entryPoints": ["src/index.ts"],
 
     "treatWarningsAsErrors": true,
+    "validation": {
+        "notDocumented": true
+    },
+    "requiredToBeDocumented": [
+        "Function"
+    ],
     "out": "docs",
     "json": "docs/docs.json"
 }
