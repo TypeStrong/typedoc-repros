@@ -3,6 +3,7 @@
   "dependencies": {
     "typedoc": "0.22.13",
     "typedoc-github-wiki-theme": "1.0.1",
+    "typedoc-plugin-markdown": "3.12.1", 
     "typescript": "latest"
   }
 }

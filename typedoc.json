@@ -1,6 +1,7 @@
 {
     "$schema": "https://typedoc.org/schema.json",
     "entryPoints": ["src/index.ts"],
+    "theme": "github-wiki",
 
     "treatWarningsAsErrors": true,
     "out": "docs",
