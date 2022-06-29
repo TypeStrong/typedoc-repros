@@ -22,4 +22,4 @@ set -v
 
 # test $(jq '.name' docs/docs.json) = '"typedoc-repros"'
 
-grep docs/docs.json "A comment for a method"
+grep "A comment for a method" docs/docs.json
