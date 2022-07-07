@@ -1,7 +1,16 @@
 {
-  "name": "typedoc-repros",
-  "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
+  "name": "@mio/scaffold",
+  "main": "./src/mioScaffold.ts",
+  "workspaces": [
+    "./packages/users",
+    "./packages/tools"
+  ],
+  "scripts": {
+    "docs:resolve": "typedoc",
+    "docs:packages": "typedoc --entryPointStrategy Packages"
+  },
+  "devDependencies": {
+    "typedoc": "^0.23.2",
+    "typescript": "^4.7.4"
   }
 }

@@ -1,0 +1,5 @@
+{
+	"name": "@mio/users",
+	"main": "src/mioUsers",
+	"typedocMain": "src/mioUsers"
+}

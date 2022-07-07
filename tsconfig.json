@@ -1,6 +1,27 @@
 {
-    "compilerOptions": {
-        "strict": true
+    "typedocOptions": {
+        "entryPoints": [
+			"packages/users/src/mioUsers.ts",
+			"packages/tools/src/mioTools.ts",  
+		],
+        "out": "docs",
+    	"json": "docs/docs.json",
+    	"treatWarningsAsErrors": true,
     },
-    "include": ["src"]
+	"include": [
+		"src/mioScaffold.ts",
+		"packages/**/**/*.ts",
+	],
+	"compilerOptions": {
+		"outDir": "./build",
+		"target": "es2017", 
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"declaration": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"inlineSourceMap": true
+	}
 }

@@ -4,10 +4,10 @@
 set -e
 
 # Install package.json dependencies
-yarn
+npm install
 
 # Run TypeDoc
-yarn typedoc
+npm run typedoc:packages
 
 echo
 echo ========================================================
