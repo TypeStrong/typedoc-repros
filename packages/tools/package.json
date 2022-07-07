@@ -1,5 +1,5 @@
 {
 	"name": "@mio/tools",
 	"main": "src/mioTools",
-	"typedocMain": "src/mioTools"
+	"typedocMain": "src/mioTools.ts"
 }
