@@ -7,7 +7,7 @@ set -e
 npm install
 
 # Run TypeDoc
-npm run typedoc:packages
+npm run docs:packages
 
 echo
 echo ========================================================
