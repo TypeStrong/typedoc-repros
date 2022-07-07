@@ -1,8 +1,8 @@
 {
     "typedocOptions": {
         "entryPoints": [
-			"packages/users/src/mioUsers.ts",
-			"packages/tools/src/mioTools.ts",  
+			"packages/users",
+			"packages/tools",  
 		],
         "out": "docs",
     	"json": "docs/docs.json",
