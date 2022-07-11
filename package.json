@@ -1,7 +1,17 @@
 {
-  "name": "typedoc-repros",
-  "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
+  "name": "mio",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "tsconfig"
+  ],
+  "scripts": {
+    "docs": "typedoc",
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "@mio/tsconfig": "*",
+    "typedoc": "^0.23.7",
+    "typescript": "^4.7.4"
   }
 }

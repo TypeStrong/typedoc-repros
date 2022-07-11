@@ -1,0 +1,10 @@
+{
+	"name": "@mio/tools",
+	"main": "src/mioTools",
+	"typedoc": { 
+		"entryPoint": "src/mioTools.ts" 
+	},
+	"devDependencies": {
+		"@mio/tsconfig": "*"
+	}
+}

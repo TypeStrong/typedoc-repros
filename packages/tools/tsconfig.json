@@ -1,0 +1,10 @@
+{
+	"extends": "@mio/tsconfig/commonjs.json",
+	"include": [
+		"src/mioTools.ts",
+		"./package.json"
+	],
+	"compilerOptions": {
+		"outDir": "../../dist/packages/tools"
+	}
+}

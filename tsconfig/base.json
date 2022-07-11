@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"composite": true,
+		"incremental": true
+
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "@mio/users",
+	"main": "src/mioUsers",
+	"typedoc": { 
+		"entryPoint": "src/mioUsers.ts"
+	},
+	"devDependencies": {
+		"@mio/tsconfig": "*"
+	}
+}
