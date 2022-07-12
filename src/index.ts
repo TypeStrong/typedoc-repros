@@ -1,4 +1,7 @@
+import NamespaceClass from "./NamespaceClass";
+
 /**
- * Some code reproducing a bug.
+ * See {@link NamespaceClass}
+ * See {@link NamespaceClass:class}
  */
-export const bug = 123;
+export const MySymbol = new NamespaceClass();
