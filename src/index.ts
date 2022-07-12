@@ -1,4 +1,7 @@
+import NamespaceClass from "./NamespaceClass";
+
 /**
- * See {@link http://www.google.com}
+ * See {@link NamespaceClass}
+ * See {@link NamespaceClass:class}
  */
-export const MySymbol = 123;
+export const MySymbol = new NamespaceClass();
