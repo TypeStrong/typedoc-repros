@@ -1,4 +1,4 @@
 /**
- * Some code reproducing a bug.
+ * See {@link http://www.google.com}
  */
-export const bug = 123;
+export const MySymbol = 123;
