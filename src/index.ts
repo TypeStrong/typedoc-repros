@@ -1,4 +1,6 @@
+const makeFn = () => () => {}
+
 /**
- * Some code reproducing a bug.
+ * my-written-docs-here
  */
-export const bug = 123;
+export const myFn = makeFn()

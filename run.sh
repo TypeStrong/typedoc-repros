@@ -20,4 +20,4 @@ set -v
 # if TypeDoc's output doesn't match what you expected. Here's one example
 # checking that the name from package.json is used in TypeDoc's output.
 
-test $(jq '.name' docs/docs.json) = '"typedoc-repros"'
+test $(jq '.children[0].signatures[0].comment.summary[0].text' docs/docs.json) = '"my-written-docs-here"'
