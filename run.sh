@@ -3,6 +3,8 @@
 # Automatically exit with an error code if any command fails
 set -e
 
+npm install -g pnpm
+
 # Install package.json dependencies
 pnpm install
 
