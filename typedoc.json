@@ -1,8 +1,10 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["src/index.ts"],
+    "entryPointStrategy": "packages",
+    "entryPoints": ["packages/*"],
 
-    "treatWarningsAsErrors": true,
+    // Disabled because of https://github.com/TypeStrong/typedoc/issues/1835
+    // "treatWarningsAsErrors": true,
     "out": "docs",
     "json": "docs/docs.json"
 }

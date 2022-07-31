@@ -1,6 +1,11 @@
 {
-    "compilerOptions": {
-        "strict": true
-    },
-    "include": ["src"]
+    "files": [],
+    "references": [
+        {
+            "path": "./packages/bar"
+        },
+        {
+            "path": "./packages/foo"
+        }
+    ]
 }
