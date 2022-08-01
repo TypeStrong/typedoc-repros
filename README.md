@@ -2,7 +2,7 @@
 
 #### Default options for a custom option are overridden then deleted when some, but not all, options are set in typedoc.json
 
-See the ouput from build, or run `npm docs`.
+See the ouput from build, or run `npm run docs`.
 
 Given a custom option declaration with:
 ```ts
