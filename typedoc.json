@@ -4,5 +4,9 @@
 
     "treatWarningsAsErrors": true,
     "out": "docs",
-    "json": "docs/docs.json"
+    "json": "docs/docs.json",
+    "plugin": ["./src/index"],
+    "test": {
+        "foo": "other"
+    }
 }

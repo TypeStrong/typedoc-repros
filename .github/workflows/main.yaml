@@ -2,7 +2,7 @@ name: Run reproduction
 on:
     push:
         branches:
-            - main
+            - bug-options
     pull_request:
         types: [opened, synchronize]
 

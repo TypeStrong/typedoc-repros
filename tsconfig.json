@@ -1,6 +1,10 @@
 {
     "compilerOptions": {
-        "strict": true
+        "strict": true,
+        "module": "commonjs",
+		"moduleResolution": "node",
+		"target": "ES6",
+		"esModuleInterop": true,
     },
     "include": ["src"]
 }

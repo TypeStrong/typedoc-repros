@@ -1,5 +1,8 @@
 {
   "name": "typedoc-repros",
+  "scripts": {
+    "docs": "tsc && typedoc"
+  },
   "dependencies": {
     "typedoc": "latest",
     "typescript": "latest"
