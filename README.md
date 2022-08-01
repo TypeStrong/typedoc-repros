@@ -1,15 +1,39 @@
 # TypeDoc reproductions
 
-If you find a bug in TypeDoc and file an issue, it's helpful -- even necessary -- to create a minimal reproduction of the bug.
+#### Default options for a custom option are overridden then deleted when some, but not all, options are set in typedoc.json
 
-This link explains why we ask for a minimal reproduction. Thank you in advance!
-https://gist.github.com/Rich-Harris/88c5fc2ac6dc941b22e7996af05d70ff
+See the ouput from build, or run `npm docs`.
 
-One way to do that is opening a pull-request on this repository with your reproduction. Github Actions will execute `./run.sh`.
+Given a custom option declaration with:
+```ts
+	name: 'test',
+	defaultValue: {
+		foo: 'foo',
+		bar: 'bar'
+	}
 
-You can put anything you want here: add/remove dependencies in `package.json`, change the commands in `run.sh`, change the code in `./src/index.ts`,
-or add a hundred more `.ts` files.
+```
+and given a typdoc.json for the custom options:
+```json
+    "test": {
+        "foo": "other"
+    }
+```
 
-Once your pull request is submitted here, link to it in your TypeDoc bug report.
+the post bootstrap custom option is:
+```js
+{ foo: 'other' }
+```
+
+and not, as expected:
+```js
+{ foo: 'other', bar: 'bar' } 
+```
+If all the custom definitions from `typedoc.json` are removed, the post bootstrap options will be read as:
+```js
+{ foo: 'foo', bar: 'bar' } 
+```
+#### expected behaviour
+The default options for a custom option will be overridden and retained, not overridden and deleted.
 
 Forked from the [ts-node-repros](https://github.com/TypeStrong/ts-node-repros) for TypeDoc.
