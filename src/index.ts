@@ -1,4 +1,10 @@
+const obj = {
+    /** function-docs */
+    fn(x: unknown) {}
+}
+
 /**
- * Some code reproducing a bug.
+ * exported-docs
+ * @param x param-docs
  */
-export const bug = 123;
+export const bug = obj.fn;
