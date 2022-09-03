@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "strict": true
+        "strict": true,
+        "checkJs": true
     },
     "include": ["src"]
 }
