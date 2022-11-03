@@ -40,8 +40,8 @@
             "dom"
         ],
         "types": [
-            "node",
-            "mocha"
+            // "node",
+            // "mocha"
         ],
         "typeRoots": [
             "node_modules/@types",
