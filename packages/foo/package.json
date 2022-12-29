@@ -1,11 +1,13 @@
 {
-    "name": "foo",
-    "version": "0.0.0",
-    "main": "dist/index.js",
-    "dependencies": {
-        "bar": "workspace:^"
-    },
-    "typedoc": {
-        "entryPoint": "src/index.ts"
-    }
+  "name": "@typedoc/foo",
+  "version": "0.0.0",
+  "exports": "./dist/index.js",
+  "dependencies": {
+    "@typedoc/bar": "0.0.0"
+  },
+  "typedoc": {
+    "entryPoints": [
+      "src/index.ts"
+    ]
+  }
 }

@@ -3,12 +3,11 @@
  * @packageDocumentation
  */
 
-import { bar } from "bar";
+import { bar } from "@typedoc/bar";
 
 /**
- * Docs for `foo` function.
+ * Docs for `foo` function, which returns a {@link @typedoc/bar!BarInt}
  */
 export function foo() {
-    console.log("foo");
-    return bar();
+  return bar();
 }

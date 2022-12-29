@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "module": "Node16",
         "strict": true,
         "composite": true
     }

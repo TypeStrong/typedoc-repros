@@ -3,5 +3,8 @@
   "dependencies": {
     "typedoc": "latest",
     "typescript": "latest"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
