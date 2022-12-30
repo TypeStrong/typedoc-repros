@@ -2,7 +2,12 @@
     "extends": "../../tsconfig.base.json",
     "compilerOptions": {
         "rootDir": "src",
-        "outDir": "dist"
+        "outDir": "dist",
+        // I'd really love for this not to be required.
+        "paths": {
+            "@typedoc/bar": ["../bar/src"]
+        }
     },
     "include": ["src"],
+    "references": [{ "path": "../bar"}]
 }

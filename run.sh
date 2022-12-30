@@ -10,4 +10,14 @@ npm install
 npx tsc --build
 
 # Run TypeDoc
-npx typedoc
+mkdir -p .typedoc
+echo "*" > .typedoc/.gitignore
+for f in packages/*; do
+    npx typedoc --entryPointStrategy resolve \
+        --json ".typedoc/${f##*/}.json" \
+        --validation false \
+        --readme none \
+        --tsconfig "$f/tsconfig.json" \
+        "$f/src/index.ts"
+done
+npx typedoc --entryPointStrategy merge ".typedoc/*.json"

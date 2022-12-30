@@ -1,7 +1,7 @@
 {
   "name": "typedoc-repros",
   "dependencies": {
-    "typedoc": "latest",
+    "typedoc": "../typedoc",
     "typescript": "latest"
   },
   "workspaces": [
