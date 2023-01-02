@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "strict": true,
-        "target": "ESNext"
+        "target": "ESNext",
+        "module": "Node16",
+        "skipLibCheck": true
     },
     "include": ["src"]
 }
