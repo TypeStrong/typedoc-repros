@@ -11,7 +11,7 @@ export class Bar {
         job: Job | undefined,
         error: Error,
         prev: string,
-      ) => void = Function;
+      ) => void = () => {};
 }
 
 interface Job { job: true }
