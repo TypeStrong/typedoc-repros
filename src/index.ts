@@ -4,7 +4,7 @@ export function foo(
         error: Error,
         prev: string,
       ) => void
-)
+) {}
 
 export class Bar {
     failed: (
@@ -13,3 +13,5 @@ export class Bar {
         prev: string,
       ) => void = Function;
 }
+
+interface Job { job: true }
