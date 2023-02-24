@@ -14,4 +14,4 @@ export class Bar {
       ) => void = () => {};
 }
 
-interface Job { job: true }
+export interface Job { job: true }
