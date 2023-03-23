@@ -13,3 +13,22 @@ or add a hundred more `.ts` files.
 Once your pull request is submitted here, link to it in your TypeDoc bug report.
 
 Forked from the [ts-node-repros](https://github.com/TypeStrong/ts-node-repros) for TypeDoc.
+
+
+# Bug report
+Type aliases generated from `io-ts` package are expanded by TypeDoc into something unhelpful. 
+
+The documentation for `myFunc` should be something like:
+```
+myFunc1(param: Test1): void
+```
+
+instead, it's:
+```
+myFunc1(param: {
+    num: number;
+    str: string;
+}): void
+```
+
+Compare this with `myFunc2` which is documented as expected.

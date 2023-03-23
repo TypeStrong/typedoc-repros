@@ -1,7 +1,18 @@
 {
   "name": "typedoc-repros",
   "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
+    "io-ts": "^2.2.20",
+    "fp-ts": "^2.5.0"
+  },
+  "description": "Demonstrate problems with typedoc",
+  "main": "dist/index.js",
+  "author": "Russell Robinson <russellr@openconcepts.com.au>",
+  "license": "MIT",
+  "scripts": {
+    "build": "typedoc ."
+  },
+  "devDependencies": {
+    "typedoc": "^0.23.28",
+    "typescript": "^4.9.5"
   }
 }
