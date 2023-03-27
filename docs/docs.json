@@ -223,10 +223,6 @@
 														"value": "b"
 													}
 												]
-											},
-											{
-												"type": "intrinsic",
-												"name": "string"
 											}
 										],
 										"name": "LiteralUnion"
