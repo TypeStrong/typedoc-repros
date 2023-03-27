@@ -1,0 +1,290 @@
+{
+	"id": 0,
+	"name": "typedoc-repros",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 7,
+			"name": "<internal>",
+			"kind": 2,
+			"kindString": "Module",
+			"flags": {},
+			"children": [
+				{
+					"id": 8,
+					"name": "LiteralUnion",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Type that provides auto-suggestions but also any string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://github.com/microsoft/TypeScript/issues/29729#issuecomment-471566609"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "types.ts",
+							"line": 6,
+							"character": 12,
+							"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/types.ts#L6"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 11,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 12,
+								"name": "U"
+							}
+						},
+						{
+							"id": 12,
+							"name": "U",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {},
+							"default": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 11,
+								"name": "T"
+							},
+							{
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"id": 12,
+										"name": "U"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 9,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 10,
+													"name": "zz_IGNORE_ME",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "types.ts",
+															"line": 8,
+															"character": 11,
+															"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/types.ts#L8"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "never"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														10
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "types.ts",
+													"line": 8,
+													"character": 9,
+													"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/types.ts#L8"
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Type Aliases",
+					"children": [
+						8
+					]
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SignatureTest",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 3,
+							"name": "new SignatureTest",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "SignatureTest"
+							}
+						}
+					]
+				},
+				{
+					"id": 4,
+					"name": "literalUnionParamMethod",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 4,
+							"character": 2,
+							"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/index.ts#L4"
+						}
+					],
+					"signatures": [
+						{
+							"id": 5,
+							"name": "literalUnionParamMethod",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 6,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 8,
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "a"
+													},
+													{
+														"type": "literal",
+														"value": "b"
+													}
+												]
+											},
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										],
+										"name": "LiteralUnion"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						4
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 3,
+					"character": 13,
+					"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/index.ts#L3"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				7
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				1
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0,
+			"url": "https://github.com/Shinigami92/typedoc-repros-2213/blob/2e1fc9f/src/index.ts#L1"
+		}
+	]
+}

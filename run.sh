@@ -21,3 +21,5 @@ set -v
 # checking that the name from package.json is used in TypeDoc's output.
 
 test $(jq '.name' docs/docs.json) = '"typedoc-repros"'
+test $(jq '.children[1].children[1].signatures[0].parameters[0].type.typeArguments[1].type' docs/docs.json) = '"intrinsic"'
+test $(jq '.children[1].children[1].signatures[0].parameters[0].type.typeArguments[1].name' docs/docs.json) = '"string"'
