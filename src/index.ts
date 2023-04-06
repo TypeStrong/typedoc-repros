@@ -1,4 +1,5 @@
-/**
- * Some code reproducing a bug.
- */
-export const bug = 123;
+export class TypeEmitter<T, TOptions extends object = Record<string, never>> {}
+
+export function createAssetEmitter<T, TOptions extends object>(
+  TypeEmitterClass: typeof TypeEmitter<T, TOptions>
+): void {}
