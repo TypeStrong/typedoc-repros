@@ -13,3 +13,8 @@ or add a hundred more `.ts` files.
 Once your pull request is submitted here, link to it in your TypeDoc bug report.
 
 Forked from the [ts-node-repros](https://github.com/TypeStrong/ts-node-repros) for TypeDoc.
+
+| Name         | Description                         | Link                           |
+|--------------|-------------------------------------|--------------------------------|
+| PropertyName | This property should have a purpose | [Example](https://example.com) |
+
