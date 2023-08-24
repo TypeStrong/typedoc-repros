@@ -1,4 +1,4 @@
 /**
- * Some code reproducing a bug.
+ * The signature for a function acting as an event handler.
  */
-export const bug = 123;
+export type EventHandler = ((e: Event) => void);
