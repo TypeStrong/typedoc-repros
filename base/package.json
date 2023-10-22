@@ -1,0 +1,14 @@
+{
+  "name": "@mytest/base",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*",
+    "NOTICE"
+  ]
+}
