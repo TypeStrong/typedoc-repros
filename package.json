@@ -1,7 +1,6 @@
 {
-  "name": "typedoc-repros",
-  "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
-  }
+	"workspaces": [
+		"./base",
+		"./sub"
+	]
 }

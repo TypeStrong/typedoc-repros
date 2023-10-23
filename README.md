@@ -1,15 +1,24 @@
-# TypeDoc reproductions
+# Reproduce
 
-If you find a bug in TypeDoc and file an issue, it's helpful -- even necessary -- to create a minimal reproduction of the bug.
+```
+$ npm install
+$ npm run build -w base
+$ npm run build -w sub
+$ npx typedoc@0.25 --out ./docs
+```
 
-This link explains why we ask for a minimal reproduction. Thank you in advance!
-https://gist.github.com/Rich-Harris/88c5fc2ac6dc941b22e7996af05d70ff
+# Primary erroneous results:
+* Docs for class `Sub` must have a link in comment "Class that implements IBase". However, `IBase` is not a link, just text.
+* Docs for class `Sub` must have a link in "Implements - IBase". However, `IBase` is not  link, just text.
+* Docs for class `Sub` must have a link in method baz which returns "IBase". However, `IBase` is not  link, just text.
+* Docs for class `Sub` must have a link for parameter `foo` of method `another` which is of type "IBase". However, `IBase` is not  link, just text.
+* Docs for interface `IBase` should have in the comment links to `ISub` and `Sub`.
 
-One way to do that is opening a pull-request on this repository with your reproduction. Github Actions will execute `./run.sh`.
+These 4 errors should, IMHO, just work. It is annoying in a monorepo that you cannot link to other packages. There may be other occurrances (like having IBase as part of a method parameter, etc).
 
-You can put anything you want here: add/remove dependencies in `package.json`, change the commands in `run.sh`, change the code in `./src/index.ts`,
-or add a hundred more `.ts` files.
+# Secondary erroneous result:
+These may not be a bug but a related feature request. 
 
-Once your pull request is submitted here, link to it in your TypeDoc bug report.
+* Docs for `IBase` should mention `Sub` as implementiSng class and `ISub` as derived interface.
 
-Forked from the [ts-node-repros](https://github.com/TypeStrong/ts-node-repros) for TypeDoc.
+So, subclasses/interfaces in other packages within the monorepo should be listed for the base class, even if it is in another package.

@@ -1,0 +1,11 @@
+{
+  "name": "@mytest/sub",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*",
+    "NOTICE"
+  ]
+}
