@@ -23,4 +23,8 @@ export class Sub implements IBase {
     baz(): IBase | undefined {
         return undefined;
     }
+
+    another(foo: IBase): void {
+        //
+    }
 }
