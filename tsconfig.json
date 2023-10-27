@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
-        "strict": true
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "es2020",
+        "strict": true,
+        "composite": true
     },
-    "include": ["src"]
 }

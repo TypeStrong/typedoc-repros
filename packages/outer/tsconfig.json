@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist/esm"
+    },
+    "include": [
+        "./index.ts"
+    ],
+    "references": [
+        { "path": "../inner" }
+    ]
+}

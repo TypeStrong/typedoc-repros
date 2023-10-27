@@ -1,0 +1,9 @@
+{
+    "name": "@whatever/inner",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc --build"
+    }
+}
