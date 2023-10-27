@@ -1,8 +1,8 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["src/index.ts"],
+    "entryPoints": ["packages/*"],
+    "entryPointStrategy": "packages",
 
     "treatWarningsAsErrors": true,
     "out": "docs",
-    "json": "docs/docs.json"
 }
