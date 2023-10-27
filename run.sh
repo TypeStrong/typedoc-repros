@@ -3,6 +3,9 @@
 # Automatically exit with an error code if any command fails
 set -e
 
+corepack enable
+corepack prepare --activate pnpm@8.9.2
+
 # Install package.json dependencies
 pnpm install
 
