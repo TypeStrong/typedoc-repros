@@ -1,4 +1,20 @@
+/** The FOO function */
+function foo() {
+    return "foo";
+}
+
+function bugInner(): { foo: string } {
+    return { foo: "bar" }
+}
+
 /**
- * Some code reproducing a bug.
+ * The BUG function
  */
-export const bug = 123;
+export const bug: {
+    (): { foo: string }
+    foo: typeof foo
+    bar: 42
+} = Object.assign(bugInner, {
+    foo,
+    bar: 42 as const,
+});
