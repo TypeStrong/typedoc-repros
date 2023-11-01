@@ -1,6 +1,7 @@
 {
-    "compilerOptions": {
-        "strict": true
-    },
-    "include": ["src"]
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["es2019"]
+  },
+  "include": ["src"]
 }
