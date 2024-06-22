@@ -1,7 +1,7 @@
 {
   "name": "typedoc-repros",
   "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
+    "typedoc": "^0.26.0",
+    "typescript": "^5.4.5"
   }
 }

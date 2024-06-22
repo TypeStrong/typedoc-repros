@@ -13,3 +13,8 @@ or add a hundred more `.ts` files.
 Once your pull request is submitted here, link to it in your TypeDoc bug report.
 
 Forked from the [ts-node-repros](https://github.com/TypeStrong/ts-node-repros) for TypeDoc.
+
+```abnf
+; taken from RFC5234
+name =  elements crlf
+```
