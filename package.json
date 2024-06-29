@@ -1,7 +1,17 @@
 {
-  "name": "typedoc-repros",
+  "name": "typedoc-packages-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc",
+    "docs-all": "npm run docs --workspaces --if-present"
+  },
   "dependencies": {
-    "typedoc": "latest",
-    "typescript": "latest"
+    "typedoc": "^0.26.1",
+    "typescript": "^5.5.2"
   }
 }

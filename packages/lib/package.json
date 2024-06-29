@@ -1,0 +1,8 @@
+{
+  "name": "@typedoc/lib",
+  "version": "0.0.1",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "docs": "typedoc --out docs"
+  }
+}
