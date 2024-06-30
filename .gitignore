@@ -1,4 +1,5 @@
 node_modules
-docs
-build
 dist
+docs
+*.tsbuildinfo
+docs-json
