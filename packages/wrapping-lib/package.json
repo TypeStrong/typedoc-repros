@@ -1,0 +1,11 @@
+{
+  "name": "@typedoc/wrapping-lib",
+  "version": "0.0.2",
+  "exports": "./dist/index.js",
+  "dependencies": {
+    "@typedoc/lib": "0.0.1"
+  },
+  "scripts": {
+    "docs": "typedoc --out docs"
+  }
+}

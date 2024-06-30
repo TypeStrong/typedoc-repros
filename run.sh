@@ -4,7 +4,8 @@
 set -e
 
 # Install package.json dependencies
-yarn
+npm ci
 
 # Run TypeDoc
-yarn typedoc
+npm run build
+npm run docs

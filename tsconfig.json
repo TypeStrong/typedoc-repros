@@ -1,6 +1,11 @@
 {
-    "compilerOptions": {
-        "strict": true
-    },
-    "include": ["src"]
+    "files": [],
+    "references": [
+        {
+            "path": "./packages/lib"
+        },
+        {
+            "path": "./packages/wrapping-lib"
+        }
+    ]
 }
