@@ -1,4 +1,4 @@
-export interface SomeInterface {
+export type SomeInterface = {
     /**
      * {@label DEFAULT}
      */
