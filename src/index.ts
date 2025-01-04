@@ -1,4 +1,6 @@
 /**
- * {@link SomeInterface#someFunction:WITHNUMBER | someFunction}
+ * Calls {@link SomeInterface#someFunction | someFunction}
  */
-export const bug = 123;
+export function doStuff() {
+    /* ... */
+}
