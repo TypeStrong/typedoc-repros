@@ -1,7 +1,7 @@
-export * from './someInterface';
+export * from './something';
 
 /**
- * Calls {@link SomeInterface#someFunction:WITHNUMBER | someFunction}
+ * Calls {@link Something#someFunction:WITHNUMBER | someFunction}
  */
 export function doStuff() {
     /* ... */
