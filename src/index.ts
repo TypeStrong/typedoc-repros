@@ -1,4 +1,4 @@
 /**
- * Some code reproducing a bug.
+ * {@link SomeInterface#someFunction:WITHNUMBER | someFunction}
  */
 export const bug = 123;
