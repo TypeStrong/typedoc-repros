@@ -1,6 +1,10 @@
 {
   "name": "typedoc-repros",
   "dependencies": {
+    "@types/prop-types": "^15.7.14",
+    "@types/react": "^19",
+    "prop-types": "^15.8.1",
+    "react": "^19",
     "typedoc": "latest",
     "typescript": "latest"
   }
