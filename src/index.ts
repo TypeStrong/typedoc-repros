@@ -1,4 +1,6 @@
-/**
- * Some code reproducing a bug.
- */
-export const bug = 123;
+import * as TypeDoc from 'typedoc';
+
+const opts: TypeDoc.TypeDocOptions = {
+  cacheBust: true,           // No error!
+  maxTypeConversionDepth: 5, // No error!
+};

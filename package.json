@@ -1,5 +1,6 @@
 {
   "name": "typedoc-repros",
+  "type": "module",
   "dependencies": {
     "typedoc": "latest",
     "typescript": "latest"

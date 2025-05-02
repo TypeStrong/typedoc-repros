@@ -6,5 +6,4 @@ set -e
 # Install package.json dependencies
 yarn
 
-# Run TypeDoc
-yarn typedoc
+yarn tsc
